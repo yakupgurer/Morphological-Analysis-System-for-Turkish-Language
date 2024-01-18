@@ -1,0 +1,1 @@
+gunicorn MorphAnalyzer:app -w 1 --log-file -

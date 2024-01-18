@@ -1,0 +1,36 @@
+<!-- developers.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developers - MorphULU Tasarım Projesi</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+
+</head>
+<body class="container text-center bg-light">
+
+    <h1 class="display-4 mt-4 mb-4">Geliştiriciler</h1>
+<a href="{{ url_for('index') }}" class="btn btn-info mt-3 text-white">Ana Sayfa</a>
+
+    <!-- Display CV images -->
+    <div class="container">
+<a href="https://tr.linkedin.com/in/yakupgurer" target="_blank" class="text-decoration-none">
+        <img src="{{ url_for('static', filename='cvs/yakupcv.jpg') }}" alt="CV 1" class="img-fluid mx-auto mt-3">
+</a>
+<hr>
+<a href="https://tr.linkedin.com/in/lokmane-boulbadaoui-4840b9226" target="_blank" class="text-decoration-none">        
+<img src="{{ url_for('static', filename='cvs/lokmancv.jpg') }}" alt="CV 2" class="img-fluid mx-auto mt-3">
+</a>
+
+    </div>
+
+<script src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
+    <script>
+        document.getElementById("myForm").addEventListener("submit", function() {
+            document.getElementById("results").innerHTML = ''; 
+            document.getElementById("loadingSpinner").style.display = 'inline-block'; 
+        });
+    </script>
+</body>
+</html>
